@@ -12,3 +12,12 @@
     background-color: $color1;
   }
 }
+
+a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
