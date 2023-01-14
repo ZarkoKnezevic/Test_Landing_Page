@@ -121,6 +121,10 @@
     &__item {
       height: 350px;
       padding: 12px;
+
+      &--text {
+        padding: 84px 33px 33px;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 .content {
-  background-color: $white;
+  position: relative;
   &__container {
     display: flex;
     padding: 128px 12px;
@@ -20,6 +20,78 @@
        margin-top: 35px;
     }
   }
+
+  &__twoColumn {
+    .content__container {
+      display: grid;
+    }
+    .content__column {
+      position: relative;
+    }
+  }
+  &__twoColumn {
+     .content__container {
+        grid-template-columns: 1fr 1fr;  
+      }
+
+    &--dna {
+      .content__container {
+        padding: 198px 12px;
+        .text {
+          color: $color2;
+        }
+      }
+      .bgImage {
+        background-image: url(../images/album/dna_transparent.png);
+      }
+    }
+    
+    &--personally {
+      .content__container {
+        padding: 198px 12px; 
+        .content__column--secondary {
+          padding-left: 157px;
+        }
+        .text {
+          color: $white;
+        }
+      }
+
+      .bgImage {
+        background-image: url(../images/album/personally.png);
+        width: 50vw;
+        &--mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include hero-1500 {
+  .content {
+    &__twoColumn {
+      &--personally {
+        .content__container  {
+          padding: 48px 12px;
+        }
+      }
+    }
+  }
+}
+
+@include lg {
+  .content {
+    &__twoColumn {
+      &--personally {
+        .content__container {
+          .content__column--secondary {
+            padding-left: 90px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include md {
@@ -32,7 +104,61 @@
       }
       .text {
         margin-top: 24px;
-        color: $white;
+      }
+    }
+    &__twoColumn {
+      .content__container {
+        grid-template-columns: 1fr;
+        padding: 48px 12px; 
+        
+        .button {
+          margin-top: 30px;
+        }
+      }
+      &--dna {
+        .content__column--secondary {
+          margin-top: 20px;
+        }
+        .bgImage {
+          height: 80%;
+          transform: translateY(20%);
+        }
+      }
+
+      &--personally {
+        .content__container {
+          .content__column--secondary {
+            padding-left: 0px;
+          }
+        }
+       .bgImage__container {
+          position: relative;
+          height: 350px;
+
+          .bgImage {
+            width: 100%;
+          }
+          .bgImage--mobile {
+            display: block;
+          }
+        }
+        .bgImage--desktop {
+          display: none;
+        }
+      }
+
+    }
+  }
+}
+
+@include sm {
+  .content {
+      &__twoColumn {
+        &--personally {
+        .bgImage__container {
+            position: relative;
+            height: 237px;
+        }
       }
     }
   }
