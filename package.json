@@ -9,11 +9,10 @@
         "images": "node ./bin/images.js"
     },
     "type": "module",
-    "author": "Dominik Hanke",
+    "author": "Zarko Knezevic",
     "license": "MIT",
     "repository": {
-        "type": "git",
-        "url": "https://github.com/noreading/bootstrap5-webpack-boilerplate.git"
+        "type": "git"
     },
     "devDependencies": {
         "@babel/core": "^7.19.0",

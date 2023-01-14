@@ -1,3 +1,82 @@
 .newsletter {
-  
+  &__container {
+    padding: 100px 12px;
+
+    h2 {
+      color: $white;
+    }
+
+    .text {
+      margin-top: 42px;
+      color: $white;
+    }
+
+    .button {
+      margin-top: 24px;
+    }
+  }
+  &__input {
+    width: 500px;
+    height: 56px;
+    margin-top: 49px;
+    padding: 12px 32px;
+    color: $color1;
+    background-color: $white;
+
+    &::placeholder {
+      color: $color1;
+    }
+  }
+
+  &__formCheck {
+    margin-top: 24px;
+
+    input {
+      &[type=checkbox] {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 0;
+        border: 0;
+      }
+      &:checked {
+        background-image: url(../../images/album/check_mark.png) !important;
+        background-color: $white;
+        border-color: $color1;
+        border: 1px solid $color1;
+      }
+
+       &:focus {
+        box-shadow: none;
+      }
+    }
+    label {
+      font-size: 16px;
+      color: $white;
+    }
+  }
+}
+
+@include md {
+  .newsletter {
+    &__container {
+      padding: 48px 12px;
+
+      .text {
+        margin-top: 24px;
+      }
+      .button {
+        margin-top: 30px;
+    }
+    }
+    &__input {
+      width: 332px;
+      margin-top: 24px;
+    }
+    &__formCheck {
+    margin-top: 24px;
+
+    label {
+      text-align: left;
+    }
+  }
+  }
 }
