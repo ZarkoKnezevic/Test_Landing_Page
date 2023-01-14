@@ -1,0 +1,41 @@
+// $buttonColors: (
+//   primaryLight: (
+//     "bgColor": $color1,
+//     "textColor": $white,
+//     "defaultText": false
+//   ),
+//   primaryDark: (
+//     "bgColor": $white,
+//     "textColor": $color1,
+//     "defaultText": true
+//   ),
+//   secondaryDark: (
+//     "bgColor": $transparent,
+//     "textColor": $color1,
+//     "defaultText": true
+//   ),
+// );
+
+// @mixin btn($bgColor: $color1, $textColor: $white, $defaultText: false) {
+//   @if $defaultText == false {
+//       background-color: $bgColor;
+//       color: $white;
+//     } @else {
+//       background-color: $bgColor;
+//       color: $color1;
+//     }
+// }
+
+// @each $key, $value in $buttonColors {
+//   $color: map.get($value, "textColor");
+//   $bgColor: map.get($value, "bgColor");
+//   $defaultText: map.get($value, "defaultText");
+
+//    .button--#{$key} {
+//       @include btn($color, $bgColor, $defaultText);
+//    }
+// }
+
+
+
+

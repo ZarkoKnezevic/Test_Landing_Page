@@ -1,0 +1,14 @@
+// Background Colors
+.bg {
+  &--dark {
+    background-color: $backgroundDark;
+  }
+
+  &--white {
+    background-color: $white;
+  }
+
+  &--primary {
+    background-color: $color1;
+  }
+}

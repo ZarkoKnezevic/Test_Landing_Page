@@ -1,0 +1,19 @@
+
+
+//---------------------------------------------
+// 1. Loading Mixins
+//---------------------------------------------
+
+@import "mixins/google-fonts";
+@import url('https://fonts.cdnfonts.com/css/playlist');
+
+//---------------------------------------------
+// 2. Loading Fonts
+//---------------------------------------------
+
+@include googleFont((
+    "name": "Open Sans",
+    "folder": "OpenSans",
+    "files": "OpenSans",
+    "weights": (300, 400, 700)
+));

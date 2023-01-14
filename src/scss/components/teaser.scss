@@ -1,0 +1,27 @@
+.teaser {
+  display: flex;
+  &__text {
+    color: $color1;
+    span {
+      color: $white;
+    }
+  }
+
+  &--primary{
+    .teaser__text {
+      color: $color2;
+      span {
+        color: $color1;
+      }
+    }
+  }
+
+  &--secondary {
+    .teaser__text {
+      color: $white;
+      span {
+        color: $color2;
+      }
+    }
+  }
+}

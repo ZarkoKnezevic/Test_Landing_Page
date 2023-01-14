@@ -1,0 +1,147 @@
+//---------------------------------------------
+// 1. Fonts
+//---------------------------------------------
+
+$font-family-theme: "Open Sans";
+$font-family-secondary: "Playlist";
+
+//---------------------------------------------
+// 2. Bootstrap Globals
+//---------------------------------------------
+
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+
+//---------------------------------------------
+// 3. Bootstrap Colors
+//---------------------------------------------
+
+$body-color: #000000; // The default text color
+
+$primary:    #0d6efd;
+$secondary:  #6c757d;
+$success:    #198754;
+$info:       #0dcaf0;
+$warning:    #ffc107;
+$danger:     #dc3545;
+$light:      #f8f9fa;
+$dark:       #212529;
+
+//---------------------------------------------
+// 3. Colors
+//---------------------------------------------
+
+// Colors
+$color1: #E61A27;
+$color2: #000000;
+$color3: #CC0000;
+$backgroundLight: #EDEDED;
+$backgroundDark: #000000;
+$white: #FFFFFF;
+$transparent: transparent;
+
+// Text
+$textLight: #2B2B2B;
+$textDark: #FFFFFF;
+$textSecondaryLight: #3C3C3CB2;
+$textSecondaryDark: #FFFFFF;
+$linkLight: #FFFFFF;
+$linkDark: #E61A27;
+
+// Headlines
+$headlineLight: #2B2B2B;
+$headlineDark: #FFFFFF;
+
+//Buttons
+
+
+//---------------------------------------------
+// 4. Text Sizes
+//---------------------------------------------
+
+// Text Main
+$text-main: 20px;
+
+// XL text
+$text-xl-1: 28px;
+$text-xl-2: 22px;
+$text-xl-3: 18px;
+$text-xl-4: 14px;
+
+// LG text
+$text-lg-1: 27px;
+$text-lg-2: 21px;
+$text-lg-3: 17px;
+$text-lg-4: 13px;
+
+// MD text
+$text-md-1: 26px;
+$text-md-2: 20px;
+$text-md-3: 16px;
+$text-md-4: 12px;
+
+// SM text
+$text-sm-1: 25px;
+$text-sm-2: 20px;
+$text-sm-3: 16px;
+$text-sm-4: 12px;
+
+// XS text
+$text-xs-1: 24px;
+$text-xs-2: 20px;
+$text-xs-3: 16px;
+$text-xs-4: 12px;
+
+//---------------------------------------------
+// 4. Heading Sizes
+//---------------------------------------------
+
+// XL headings
+$heading-xl-1: 64px;
+$heading-xl-2: 56px;
+$heading-xl-3: 48px;
+$heading-xl-4: 40px;
+$heading-xl-5: 32px;
+$heading-xl-6: 24px;
+
+// LG headings
+$heading-lg-1: 57px;
+$heading-lg-2: 50px;
+$heading-lg-3: 43px;
+$heading-lg-4: 36px;
+$heading-lg-5: 29px;
+$heading-lg-6: 22px;
+
+// MD headings
+$heading-md-1: 50px;
+$heading-md-2: 44px;
+$heading-md-3: 38px;
+$heading-md-4: 32px;
+$heading-md-5: 26px;
+$heading-md-6: 20px;
+
+// SM headings
+$heading-sm-1: 43px;
+$heading-sm-2: 38px;
+$heading-sm-3: 33px;
+$heading-sm-4: 28px;
+$heading-sm-5: 23px;
+$heading-sm-6: 18px;
+
+// XS headings
+$heading-xs-1: 36px;
+$heading-xs-2: 32px;
+$heading-xs-3: 28px;
+$heading-xs-4: 24px;
+$heading-xs-5: 20px;
+$heading-xs-6: 16px;
+
+//---------------------------------------------
+// 6. Font Weight
+//---------------------------------------------
+   
+$medium: 300;
+$regular: 400;
+$semiBold: 700;
+$bold: 800;

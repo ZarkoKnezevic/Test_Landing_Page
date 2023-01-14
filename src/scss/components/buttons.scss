@@ -1,0 +1,29 @@
+.button {
+  padding: 16px 48px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+
+  &--primaryLight {
+    color: $white;
+    background-color: $color1;
+  }
+
+  &--primaryDark {
+    color: $color1;
+    background-color: $white;
+  }
+
+  &--secondaryLight {
+    color: $color1;
+    background-color: $transparent;
+  }
+}
+
+@include lg {
+  .button {
+    padding: 12px 32px; 
+    font-size: 16px;
+  }
+}
+

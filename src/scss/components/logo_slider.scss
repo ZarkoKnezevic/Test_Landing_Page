@@ -1,0 +1,163 @@
+.logoSlider__container {
+  display: flex;
+  align-items: center;
+  padding: 32px 12px;
+  .text {
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-weight: $semiBold;
+  }
+}
+
+.logoSlider {
+  height: 60px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  &__track {
+    width: 2718px;
+    display: flex;
+    animation: scroll 15s linear infinite;
+    justify-content: space-between;
+  }
+  &__item {
+    height: 36px;
+    display: grid;
+    margin-right: 64px;
+    place-items: center;
+    transition:0.5s;
+    cursor:pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--1,
+    &--8 {
+      width: 139px;
+      background-image: url(../../images/logo_slides/die_presse.png)
+    }
+    &--2,
+    &--9 {
+      width: 172px;
+      background-image: url(../../images/logo_slides/kurier.png)
+    }
+    &--3,
+    &--10 {
+      width: 152px;
+      background-image: url(../../images/logo_slides/wienerin.png)
+    }
+    &--4,
+    &--11 {
+      width: 204px;
+      background-image: url(../../images/logo_slides/hamburg1.png)
+    }
+    &--5,
+    &--12 {
+      width: 62px;
+      background-image: url(../../images/logo_slides/kleine_zeitung.png)
+    }
+    &--6,
+    &--13 {
+      width: 84px;
+      background-image: url(../../images/logo_slides/orf.png)
+    }
+    &--7,
+    &--14 {
+      width: 130px;
+      background-image: url(../../images/logo_slides/woman.png)
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item:hover {
+    transform:scale(0.8)
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-150px * 2));
+  }
+}
+
+@include md {
+  .logoSlider__container {
+    flex-direction: column;
+    align-items: flex-start;  
+    padding: 20px 12px;          
+    .text {
+      font-weight: $regular;
+    }
+  }
+  .logoSlider {
+     &__track {
+      width: 1359px;
+      display: flex;
+      animation: scroll 15s linear infinite;
+      justify-content: space-between;
+    }
+    &__item {
+      height: 20px;
+      display: grid;
+      margin-right: 24px;
+      place-items: center;
+      transition:0.5s;
+      cursor:pointer;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &--1,
+      &--8 {
+        width: 70px;
+      }
+      &--2,
+      &--9 {
+        width: 86px;
+      }
+      &--3,
+      &--10 {
+        width: 76px;
+      }
+      &--4,
+      &--11 {
+        width: 102px;
+      }
+      &--5,
+      &--12 {
+        width: 36px;
+      }
+      &--6,
+      &--13 {
+        width: 42px;
+      }
+      &--7,
+      &--14 {
+        width: 65px;
+      }
+    }
+  }
+  
+  .text {
+    font-size: 20px;
+    font-weight: $regular;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-80px * 5));
+    }
+  }
+}

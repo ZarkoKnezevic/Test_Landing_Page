@@ -1,0 +1,197 @@
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+}
+
+h1 {
+  font-size: $heading-xl-1;
+}
+h2 {
+  font-size: $heading-xl-2;
+}
+h3 {
+  font-size: $heading-xl-3;
+}
+h4 {
+  font-size: $heading-xl-4;
+}
+h5 {
+  font-size: $heading-xl-5;
+}
+h6 {
+  font-size: $heading-xl-6;
+}
+
+// Text
+p,
+.text {
+  font-size: $text-main;
+  line-height: 1.4;
+}
+.active {
+  font-weight: 700;
+} 
+.text--1 {
+  font-size: $text-xl-1;
+}
+.text--2 {
+  font-size: $text-xl-2;
+}
+.text--3 {
+  font-size: $text-xl-3;
+}
+.text--4 {
+  font-size: $text-xl-4;
+}
+
+.preheadline {
+  font-size: 28px;
+  font-weight: $semiBold;
+}
+
+@include lg {
+  h1 {
+    font-size: $heading-lg-1;
+  }
+  h2 {
+    font-size: $heading-lg-2;
+  }
+  h3 {
+    font-size: $heading-lg-3;
+  }
+  h4 {
+    font-size: $heading-lg-4;
+  }
+  h5 {
+    font-size: $heading-lg-5;
+  }
+  h6 {
+    font-size: $heading-lg-6;
+  }
+  .text--1 {
+    font-size: $text-lg-1;
+  }
+  .text--2 {
+    font-size: $text-lg-2;
+  }
+  .text--3 {
+    font-size: $text-lg-3;
+  }
+  .text--4 {
+    font-size: $text-lg-4;
+  }
+  .preheadline {
+    font-size: 26px;
+  }
+}
+
+@include md {
+  h1 {
+    font-size: $heading-md-1;
+  }
+  h2 {
+    font-size: $heading-md-2;
+  }
+  h3 {
+    font-size: $heading-md-3;
+  }
+  h4 {
+    font-size: $heading-md-4;
+  }
+  h5 {
+    font-size: $heading-md-5;
+  }
+  h6 {
+    font-size: $heading-md-6;
+  }
+  .text--1 {
+    font-size: $text-md-1;
+  }
+  .text--2 {
+    font-size: $text-md-2;
+  }
+  .text--3 {
+    font-size: $text-md-3;
+  }
+  .text--4 {
+    font-size: $text-md-4;
+  }
+  .preheadline {
+    font-size: 24px;
+  }
+}
+
+
+@include sm {
+  h1 {
+    font-size: $heading-sm-1;
+  }
+  h2 {
+    font-size: $heading-sm-2;
+  }
+  h3 {
+    font-size: $heading-sm-3;
+  }
+  h4 {
+    font-size: $heading-sm-4;
+  }
+  h5 {
+    font-size: $heading-sm-5;
+  }
+  h6 {
+    font-size: $heading-sm-6;
+  }
+  .text--1 {
+    font-size: $text-sm-1;
+  }
+  .text--2 {
+    font-size: $text-sm-2;
+  }
+  .text--3 {
+    font-size: $text-xl-3;
+  }
+  .text--4 {
+    font-size: $text-xl-4;
+  }
+}
+
+@include xs {
+  h1 {
+    font-size: $heading-xs-1;
+  }
+  h2 {
+    font-size: $heading-xs-2;
+  }
+  h3 {
+    font-size: $heading-xs-3;
+  }
+  h4 {
+    font-size: $heading-xs-4;
+  }
+  h5 {
+    font-size: $heading-xs-5;
+  }
+  h6 {
+    font-size: $heading-xs-6;
+  }
+  .text--1 {
+    font-size: $text-xs-1;
+  }
+  .text--2 {
+    font-size: $text-xs-2;
+  }
+  .text--3 {
+    font-size: $text-xs-3;
+  }
+  .text--4 {
+    font-size: $text-xs-4;
+  }
+}

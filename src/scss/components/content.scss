@@ -1,0 +1,39 @@
+.content {
+  background-color: $white;
+  &__container {
+    display: flex;
+    padding: 128px 12px;
+
+    .preheadline {
+      text-transform: uppercase;
+      color: $color1;
+    }
+    h2 {
+      margin-top: 16px;
+      color: $white;
+    }
+    .text {
+      margin-top: 42px;
+      color: $white;
+    }
+    .button {
+       margin-top: 35px;
+    }
+  }
+}
+
+@include md {
+  .content {
+    &__container {
+      padding: 48px 12px;
+
+      h2 {
+        margin-top: 11px;
+      }
+      .text {
+        margin-top: 24px;
+        color: $white;
+      }
+    }
+  }
+}

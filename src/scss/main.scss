@@ -1,0 +1,44 @@
+
+//---------------------------------------------
+// 1. Basics
+//---------------------------------------------
+
+@import "variables";
+@import "bootstrap";
+@import "fonts";
+@import "utility";
+
+//---------------------------------------------
+// 2.Mixins and Functions
+//---------------------------------------------
+
+@import "mixins/breakpoints";
+// @import "mixins/buttons";
+
+//---------------------------------------------
+// 3. Text
+//---------------------------------------------
+
+@import "font-styles";
+
+body {
+  font-family: $font-family-theme;
+}
+
+//---------------------------------------------
+// 4.Components
+//---------------------------------------------
+
+@import "components/slider";
+@import "components/navigation";
+@import "components/header";
+@import "components/bg_image";
+@import "components/slider";
+@import "components/hero";
+@import "components/buttons";
+@import "components/logo_slider";
+@import "components/content";
+@import "components/teaser";
+@import "components/teaser_grid";
+
+
