@@ -10,17 +10,16 @@
 }
 
 .logoSlider {
-  height: 60px;
   position: relative;
+  display: flex;
+  height: 60px;
   width: 100%;
-  display: grid;
   place-items: center;
   overflow: hidden;
 
   &__track {
-    width: 2718px;
     display: flex;
-    animation: scroll 15s linear infinite;
+    animation: slidein 100s linear infinite;
     justify-content: space-between;
   }
   &__item {
@@ -80,12 +79,12 @@
   }
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0px);
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  100% {
-    transform: translateX(calc(-150px * 2));
+  to {
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
