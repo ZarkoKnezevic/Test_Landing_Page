@@ -1,0 +1,130 @@
+  .blog {
+    color: $white;
+
+    &__container {
+      padding: 128px 12px;
+
+      .blog__headingContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .blog__heading {
+           &--mobile {
+            display: none;
+          }
+        }
+      }
+      .button { 
+        &--mobile {
+          display: none;
+          margin-top: 54px;
+        }
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0 40px;
+      margin-top: 40px;
+
+      .blog__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .teaserGrid__cta {
+          margin-top: 40px;
+        }
+      }
+
+      .blog__item {
+        position: relative;
+
+        img {
+          max-width: 100%;
+        }
+
+        h5,
+        .blog__date,
+        .text {
+          margin-top: 24px;
+        }
+
+        .blog__date {
+          .title {
+            color: $color1;
+          }
+        }
+      }
+    }
+  }
+
+
+@include xl {
+  .blog {
+    &__container {
+      padding: 80px 12px;
+
+      .button { 
+        &--mobile {
+          display: block;
+        }
+        &--desktop {
+          display: none;
+        }
+      }
+    .blog__headingContainer{
+      .blog__heading {
+          &--mobile {
+            display: block;
+          }
+          &--desktop {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px 0;
+
+      .blog__content {
+
+        .teaserGrid__cta {
+          margin-top: 30px;
+        }
+      }
+
+      .blog__item {
+        .blog_heading,
+        .blog__date,
+        .text {
+          margin-top: 24px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  .blog {
+    &__container {
+      padding: 42px 12px;
+    }
+
+    &__grid {
+      .blog__content {
+        .teaserGrid__cta {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
