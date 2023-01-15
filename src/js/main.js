@@ -12,4 +12,3 @@ initBootstrap({
 });
 
 // Your app code
-console.log(`Hello ${process.env.HELLO}`);

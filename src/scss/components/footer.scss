@@ -39,9 +39,6 @@
   &__item {
     margin-top: 24px;
 
-    .footer__info {
-
-    }
     .footer__link {
       display: block;
       margin-top: 20px;
@@ -56,6 +53,10 @@
       .footer__icon {
         height: 14px;
         margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -68,7 +69,14 @@
 @include lg {
   .footer {
       &__grid {
+        grid-template-columns: 1fr;
+        gap: 40px 0;
       .footer__group {
+        display: flex;
+
+        &--columns {
+          justify-content: flex-start;
+        }
         &--logo {
           img {
             height: 51px;
@@ -85,18 +93,6 @@
       padding: 48px 12px;
     }
 
-    &__grid {
-      grid-template-columns: 1fr;
-      gap: 40px 0;
-
-      .footer__group {
-        display: flex;
-
-        &--columns {
-          justify-content: flex-start;
-        }
-      }
-    }
     &__item {
       margin-top: 16px;
       .footer__link {
