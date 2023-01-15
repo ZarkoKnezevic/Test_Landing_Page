@@ -20,4 +20,3 @@
 
    ```bash
    npm run build
-   ```
